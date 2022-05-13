@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+
+    <style type="text/css">
+
+          label{
+          display: inline-block;
+          float: left;
+          clear: left;
+          width: 100px;
+          text-align: left; /*Change to right here if you want it close to the inputs*/
+          }
+
+          body {font-family: Arial, Helvetica, sans-serif;}
+          form {border: 3px solid #f1f1f1;
+                 background-color: #ADD8E6}
+
+          input[type=text], input[type=password] {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+          }
+
+          #submit {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 45%;
+         }
+
+    </style>
+
+  </head>
+  <body>
+
+    <h3> If you are a registered user, please log in </h3>
+
+    <form action="register.php" method="POST">
+
+      <label for="username"> Username </label>
+      <input type="text" name="username"><br>
+      <label for="passwd"> Password </label>
+      <input type="text" name="passwd"><br>
+      <input type="submit" value="Submit" id="submit">
+
+    </form>
+
+
+  </body>
+</html>
